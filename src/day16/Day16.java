@@ -56,13 +56,12 @@ public class Day16 {
 
     //for number 7
 
-    public static String threeDigit(String threedigit){
-        String f = threedigit.toLowerCase();
+    public static String threeDigit(String threeDigit){
+        threeDigit = threeDigit.toLowerCase();
 
         String s = "";
-        s += f.charAt(0);
-        s.toUpperCase();
-        s += f.substring(1, 3);
+        s += threeDigit.toUpperCase().charAt(0);
+        s += threeDigit.substring(1, threeDigit.length());
 
         return s;
     }
